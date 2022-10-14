@@ -30,7 +30,7 @@ func main() {
 
 	switch CallFunctionName {
 	case UTS_NAMESPACE:
-		err = UTSNamespace()
+		err = UTS_Namespace()
 	default:
 		fmt.Println("call function is NULL, please input parameter")
 	}

@@ -7,7 +7,7 @@ import (
 	"syscall"
 )
 
-func UTSNamespace() (err error) {
+func UTS_Namespace() (err error) {
 	cmd := exec.Command("sh")
 	cmd.SysProcAttr = &syscall.SysProcAttr{
 		Cloneflags: syscall.CLONE_NEWUTS,
